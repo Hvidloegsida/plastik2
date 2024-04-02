@@ -1,37 +1,42 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Hero from '../components/Hero.astro';
+import Button from "../components/Button.astro";
+import Hero from "../components/Hero.astro";
+import Sektion2 from "../components/Sektion2.astro";
+import Sektion3 from "../components/Sektion3.astro";
+import Animation from "../components/Animation.astro";
+import Sektion4 from "../components/Sektion4.astro";
+import Sektion5 from "../components/Sektion5.astro";
+import Shop from "../components/Shop.astro";
 ---
+
 <MainLayout title="Titel">
+  <!-- HERO UNIT  -->
+  <Hero />
+  <section>
+    <h1>Plastic Change</h1>
+    <p>
+      Der udledes omkring 8-10 millioner tons plastik til havet på verdensplan
+      årligt
+    </p>
 
-	<!-- HERO UNIT  -->
-	<Hero/>
-	<section>
-		<h1>Plastic Change</h1>
-		<p>Der udledes omkring 8-10 millioner tons plastik til havet på verdensplan årligt</p>
+    <div>
+      <p>Dyk ned</p>
+      <img src="" alt="" />
+    </div>
+  </section>
 
-<div>
-	<p>Dyk ned</p>
-	<img src="" alt="">
-</div>
-	</section>
+  <!-- UNDERSØGELSER VISER BOX  -->
 
- 
-		<!-- UNDERSØGELSER VISER BOX  -->
+  <Sektion2 />
+  <Sektion3 />
+  <Animation />
+  <Sektion4 />
+  <Sektion5 />
+  <!-- Støt her  -->
+  <Shop />
 
-	<section>
-      <h2>Flere undersøgelse viser...</h2>
-	  <img src="" alt="">
-	  <p>At forureningen har store konsekvenser for dyrelivet. F.eks. har en nylig undersøgelse fra University of Essex og Plymouth Marine Laboratory fundet plastik i 102 ud af 102 havskildpadder fra hhv. Atlanterhavet, Middelhavet og Stillehavet.</p>
-	</section>
+  <!-- TONS AF PLASTIK  -->
 
-
-			<!-- TONS AF PLASTIK  -->
-
-	<section>
-
-	</section>
-
-
+  <section></section>
 </MainLayout>
