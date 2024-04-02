@@ -1,4 +1,5 @@
 ---
+import Button from "./Button.astro"
 ---
 <div class="flex flex-row flex-wrap gap-8 text-white">
     <div>
@@ -29,12 +30,23 @@
         <li>Støt som virksomhed</li>
     </ul>
 </div>
-<div>
-    <img src="../../public/instagramm.png" alt="">
+<div class="w-6 ml-24">
+    <img src="../../public/instagramm.png" alt=""     >
     <img src="../../public/youtubee.png" alt="">
     <img src="../../public/linkedinn.png" alt="">
     <img src="../../public/twitterx.png" alt="">
     <img src="../../public/face.png" alt="">
 </div>
 </div>
-  
+<div>
+    <h4 class="text-white font-bold">Tilmeld dig vores nyhedsbrev</h4>
+    <form action="" class="text-orange ">
+        <label for="" class="text-orange "></label>
+        <input type="text" placeholder="Skriv din email her" class="border-4 rounded-full border-orange">
+    </form>
+    <Button>Tilmeld</Button>
+</div>
+  <div class="text-white flex flex-row">
+    <p>Privatlivspolitik</p>
+    <p>Betalingspolitik</p>
+  </div>
