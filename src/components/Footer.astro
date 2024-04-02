@@ -1,10 +1,12 @@
 ---
 import Button from "./Button.astro"
 ---
-<div class="flex flex-row flex-wrap gap-8 text-white">
+<div class="jimmy pt-5">
+
+    <div class="flex flex-row flex-wrap gap-8 text-white mb-14 ml-5">
     <div>
-    <h4 class="font-bold">Bank</h4>
-    <ul>
+    <h4 class="font-bold text-lg mb-2">Bank</h4>
+    <ul class="space-y-2">
         <li>CVR. 35778985</li>
         <li>Konto. 8411 0002039618</li>
         <li>MobilePay. 304961</li>
@@ -13,8 +15,8 @@ import Button from "./Button.astro"
     </ul>
 </div>
 <div>
-    <h4 class="font-bold">Andet</h4>
-    <ul>
+    <h4 class="font-bold text-lg mb-2">Andet</h4>
+    <ul class="space-y-2">
         <li>Webshop</li>
         <li>Privatlivspolitik</li>
         <li>Betalingspolitik</li>
@@ -22,8 +24,8 @@ import Button from "./Button.astro"
 </div>
 
 <div>
-    <h4 class="font-bold">Støt nu</h4>
-    <ul>
+    <h4 class="font-bold text-lg mb-2">Støt nu</h4>
+    <ul class="space-y-2"> 
         <li>Giv et bidrag </li>
         <li>Bliv medlem</li>
         <li>Lav et testamente</li>
@@ -38,15 +40,25 @@ import Button from "./Button.astro"
     <img src="../../public/face.png" alt="">
 </div>
 </div>
-<div>
-    <h4 class="text-white font-bold">Tilmeld dig vores nyhedsbrev</h4>
-    <form action="" class="text-orange ">
+<div class="ml-5 mb-14">
+    <h4 class="text-white font-bold mb-3">Tilmeld dig vores nyhedsbrev</h4>
+    <div class="flex gap-4">
+    <form action="" class="text-orange">
         <label for="" class="text-orange "></label>
-        <input type="text" placeholder="Skriv din email her" class="border-4 rounded-full border-orange">
+        <input type="text" placeholder="Skriv din email her" class="border-4 rounded-full border-orange ">
     </form>
-    <Button>Tilmeld</Button>
+    <Button>Tilmeld</Button></div>
 </div>
-  <div class="text-white flex flex-row">
+  <div class="text-white flex flex-row justify-center items-center gap-6">
     <p>Privatlivspolitik</p>
     <p>Betalingspolitik</p>
   </div>
+</div>
+
+
+<style>
+    .jimmy {
+        background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+    }
+</style>
