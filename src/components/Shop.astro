@@ -3,7 +3,7 @@ import Button from "./Button.astro";
 ---
 
 <div
-  class="text-white space-y-10 flex flex-col justify-center items-center my-32 "
+  class="text-white jsani8 space-y-10 flex flex-col justify-center items-center my-32 "
 >
   <p class="mx-5 font-anek  text-center uppercase md:text-2xl">
     Spred budskabet og køb vores merch!
@@ -13,3 +13,15 @@ import Button from "./Button.astro";
     Velkommen til havbunden!<br /> Lad os sammen holde den ren ♥
   </p>
 </div>
+
+<script>
+
+  import { inView } from "motion";
+  
+  const jsani8 = document.querySelector(".jsani8");
+  
+  inView(jsani8, () => {
+    jsani8.classList.add("animate__animated", "animate__fadeInDown");
+  });
+  
+  </script>

@@ -2,7 +2,7 @@
 import Button from "./Button.astro"
 ---
 
-<section class="text-white border-4 bg-[#193268] rounded-[40px] py-6 mx-3 px-8 space-y-10 text-center mt-20 md:mx-[350px]">
+<section class="text-white jsani7 border-4 bg-[#193268] rounded-[40px] py-6 mx-3 px-8 space-y-10 text-center mt-20 md:mx-[350px]">
     <h2 class="font-bold md:text-3xl">Støt vores hav med din donation i dag og bekæmp plastikforurening sammen med os!</h2>
     
    <div class="flex gap-5 justify-center font-anek ">
@@ -31,3 +31,16 @@ import Button from "./Button.astro"
    </div>
 
 </section>
+
+
+<script>
+
+        import { inView } from "motion";
+        
+        const jsani7 = document.querySelector(".jsani7");
+        
+        inView(jsani7, () => {
+          jsani7.classList.add("animate__animated", "animate__fadeInDown");
+        });
+        
+        </script>

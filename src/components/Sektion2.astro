@@ -1,4 +1,4 @@
-<div class="my-20">
+<div class="my-20 jsani2">
   <h2 class="text-center text-3xl font-bold text-white md:text-4xl md:mb-4">
     Flere <span class="text-orange md:text-white md:text-6xl"
       >undersøgelser</span
@@ -17,3 +17,19 @@
     Middelhavet og Stillehavet.
   </p>
 </div>
+
+<script>
+
+
+import { inView } from "motion";
+
+const jsani2 = document.querySelector(".jsani2");
+
+inView(jsani2, () => {
+  jsani2.classList.add("animate__animated", "animate__fadeInDown");
+});
+
+
+
+
+</script>

@@ -1,5 +1,5 @@
 <!-- der skal billeder ind her, grid?? -->
-<div class="my-12 mx-5">
+<div class="my-12 mx-5 jsani6">
   <div
     class="text-white space-y-2 flex flex-col justify-center items-center mt-10 md:mx-96"
   >
@@ -37,3 +37,15 @@
     </div>
   </div>
 </div>
+
+<script>
+
+  import { inView } from "motion";
+  
+  const jsani6 = document.querySelector(".jsani6");
+  
+  inView(jsani6, () => {
+    jsani6.classList.add("animate__animated", "animate__fadeInDown");
+  });
+  
+  </script>

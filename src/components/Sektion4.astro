@@ -1,5 +1,5 @@
 
-<div class="text-white my-14">
+<div class="text-white my-14 jsani5">
 
 <div class="border-4 bg-[#193268] rounded-[40px] py-6 mx-3 md:mx-[335px]">
 
@@ -32,3 +32,17 @@
 </div>
 
 </div>
+
+
+
+<script>
+
+  import { inView } from "motion";
+  
+  const jsani5 = document.querySelector(".jsani5");
+  
+  inView(jsani5, () => {
+    jsani5.classList.add("animate__animated", "animate__fadeInDown");
+  });
+  
+  </script>

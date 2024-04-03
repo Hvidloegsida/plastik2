@@ -1,5 +1,5 @@
 <div
-  class="text-white space-y-2 flex flex-col justify-center items-center mt-10 md:my-32"
+  class="text-white jsani4 space-y-2 flex flex-col justify-center items-center mt-10 md:my-32"
 >
   <img src="skraldebil2.svg" alt="" class="max-w-xs mb-5 animation" />
   <p class="mx-5 font-anek md:mx-96 md:text-[17px]">
@@ -28,3 +28,15 @@
     animation: slideInOut 20s linear infinite;
   }
 </style>
+
+<script>
+
+  import { inView } from "motion";
+  
+  const jsani4 = document.querySelector(".jsani4");
+  
+  inView(jsani4, () => {
+    jsani4.classList.add("animate__animated", "animate__fadeInDown");
+  });
+  
+  </script>

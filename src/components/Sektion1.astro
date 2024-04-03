@@ -1,4 +1,4 @@
-<div class="mt-36 md:mx-72">
+<div class="mt-36 md:mx-72 jsani">
   <div class="md:flex gap-0">
     <div class="text-white space-y-2 flex flex-col justify-center items-center">
       <p class="text-4xl text-orange font-anek">01.</p>
@@ -49,3 +49,16 @@
     </p>
   </div>
 </div>
+
+<script>
+
+  import { inView } from "motion";
+  const jsani = document.querySelector(".jsani");
+
+  inView(jsani, () => {
+    jsani.classList.add("animate__animated", "animate__fadeInDown");
+  });
+
+
+
+</script>
