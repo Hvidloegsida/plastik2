@@ -1,15 +1,15 @@
 ---
 import Button from "./Button.astro"
 ---
-<div class="flex flex-row mb-10">
-<img src="../../public/affald1.svg" alt="" class="left-4 absolute w-24">
-<img src="../../public/affald2.svg" alt="" class="absolute w-24 left-24">
-<img src="../../public/affald3.svg" alt="" class="absolute w-24 left-32">
-<img src="../../public/affald4.svg" alt="" class="absolute w-24 left-44">
-<img src="../../public/affald5.svg" alt="" class="absolute w-24 left-60 rotate-45">
-<img src="../../public/affald1.svg" alt="" class="left-72 absolute w-24">
-<img src="../../public/affald4.svg" alt="" class="absolute w-24  rotate-180">
-<img src="../../public/affald3.svg" alt="" class="absolute w-24 left-[300px] rotate-45 ">
+<div class="flex flex-row mb-10 md:mb-52">
+<img src="../../public/affald1.svg" alt="" class="left-4 absolute w-24 md:w-60 md:left-[2rem]">
+<img src="../../public/affald2.svg" alt="" class="absolute w-24 left-24 md:w-60 md:left-[12rem]" >
+<img src="../../public/affald3.svg" alt="" class="absolute w-24 left-32 md:w-60 md:left-[22rem] md:rotate-90">
+<img src="../../public/affald4.svg" alt="" class="absolute w-24 left-44 md:w-60 md:left-[32rem]">
+<img src="../../public/affald5.svg" alt="" class="absolute w-24 left-60 rotate-45 md:w-60 md:left-[42rem]">
+<img src="../../public/affald1.svg" alt="" class="left-72 absolute w-24 md:w-60 md:left-[52rem]">
+<img src="../../public/affald4.svg" alt="" class="absolute w-24  rotate-180 md:w-60 md:left-[62rem]">
+<img src="../../public/affald3.svg" alt="" class="absolute w-24 left-[300px] rotate-45 md:w-60 md:left-[72rem]">
 
 
 
@@ -18,7 +18,7 @@ import Button from "./Button.astro"
 </div>
 <div class="jimmy pt-32">
 
-    <div class="flex flex-row flex-wrap gap-8 text-white mb-14 mx-5">
+    <div class="flex flex-row flex-wrap gap-8 text-white mb-14 mx-5 md:justify-center md:items-start md:gap-28">
     <div>
     <h4 class="font-bold text-lg mb-2">Bank</h4>
     <ul class="space-y-2">
@@ -55,16 +55,16 @@ import Button from "./Button.astro"
     <img src="../../public/face.png" alt="">
 </div>
 </div>
-<div class="ml-5 mb-14">
-    <h4 class="text-white font-bold mb-3">Tilmeld dig vores nyhedsbrev</h4>
-    <div class="flex gap-4">
+<div class="mx-5 mb-14 md:justify-center md:items-center md:flex md:flex-col">
+    <h4 class="text-white font-bold mb-3 md:text-2xl">Tilmeld dig vores nyhedsbrev</h4>
+    <div class="flex gap-4 md:flex-row">
     <form action="" class="text-orange">
         <label for="" class="text-orange "></label>
         <input type="text" placeholder="Skriv din email her" class="border-4 rounded-full border-orange ">
     </form>
     <Button>Tilmeld</Button></div>
 </div>
-  <div class="text-white flex flex-row justify-center items-center gap-6">
+  <div class="text-white flex flex-row justify-center items-center gap-6 md:gap-40">
     <p>Privatlivspolitik</p>
     <p>Betalingspolitik</p>
   </div>
