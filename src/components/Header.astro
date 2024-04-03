@@ -1,10 +1,10 @@
 ---
 ---
 
-<div x-data="{ showmenu: false }" class="p-6 fixed lg:static w-full mb-5 px-10 bg-back z-[150]" >
+<div x-data="{ showmenu: false }" class="p-6 fixed lg:static w-[105%] mb-5 px-10 z-[150]" >
     <div id="navbar" class="flex flex-row justify-between">
     <div id="logo" class=" md:w-[154px]" >
-    <a href="/"><img class="hidden md:block" src="/menu.png" alt="Logo"></a>
+    <a href="/"><img class="hidden md:block" src="logo.png" alt="Logo"></a>
     </div>
     
     <nav id="desktopmenu" class="hidden justify-start lg:block">
@@ -17,14 +17,14 @@
     </nav>
     
     <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">
-    <img class="w-5 " src="/bm.png" alt="Menu">
+    <img class="w-8" src="/menuu.png" alt="Menu">
     </button>
     
     </div>
-    <nav id="mobilmenu" class="flex flex-col content-center bg-groen mt-4" 
+    <nav id="mobilmenu" class="flex flex-col content-center bg-orange mt-14 text-white" 
     x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-        <ul class="font-bold">
-            <li class="text-center py-2 border-y-2"><a href="#link1">Vores arbejde</a></li>
+        <ul class="font-bold border-4">
+            <li class="text-center py-2 border-b-2"><a href="#link1">Vores arbejde</a></li>
             <li class="text-center py-2 border-b-2"><a href="#link2">Hvad kan du gøre?</a></li>
             <li class="text-center py-2 border-b-2"><a href="#link3">Shop</a></li>
             <li class="text-center py-2 border-b-2"><a href="#link4">Bliv medlem</a></li>   
