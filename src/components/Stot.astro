@@ -1,0 +1,33 @@
+---
+import Button from "./Button.astro"
+---
+
+<section class="text-white bg-[#00348C] rounded-[40px] py-6 mx-3 px-8 space-y-10 text-center">
+    <h2 class="font-bold">Støt vores hav med din donation i dag og bekæmp plastikforurening sammen med os!</h2>
+    
+   <div class="flex gap-5 justify-center">
+    
+    <div>
+            <input type="checkbox" id="checkbox" name="checkbox" class="mr-1 mb-1 rounded-full w-5 h-5">
+            <label for="checkbox">Månedligt</label>
+    </div>
+
+    <div>
+            <input type="checkbox" id="checkbox" name="checkbox" class="mr-1 mb-1 rounded-full w-5 h-5">
+            <label for="checkbox">En gang</label>
+    </div>
+
+   </div>
+
+   <div class="flex gap-5  justify-center">
+      <p class="bg-orange font-bold p-3 px-4 rounded-[25px]">50</p>
+      <p class="bg-orange font-bold p-3 px-4 rounded-[25px]">75</p>
+      <p class="bg-orange font-bold p-3 px-3 rounded-[25px]">150</p>
+   </div>
+
+   <div class="space-x-8">
+   <Button variant="secondary"> Andet beløb</Button>
+   <Button>♥ STØT</Button>
+   </div>
+
+</section>
