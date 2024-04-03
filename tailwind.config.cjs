@@ -12,6 +12,9 @@ module.exports = {
             colors: {
                 orange: "#FF6B00",
             },
+            fontFamily: {
+anek: ["Anek Devanagari"],
+            },
         },
     },
   };

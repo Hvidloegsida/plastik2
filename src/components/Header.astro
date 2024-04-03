@@ -1,19 +1,18 @@
 ---
 ---
-
-<div x-data="{ showmenu: false }" class="p-6 fixed lg:static w-[105%] mb-5 px-10 z-[150]" >
+<div x-data="{ showmenu: false }" class="p-6 fixed lg:static w-[105%] mb-5 px-10 z-[150] md:w-full" >
     <div id="navbar" class="flex flex-row justify-between">
     <div id="logo" class=" md:w-[154px]" >
     <a href="/"><img class="hidden md:block" src="logo.png" alt="Logo"></a>
     </div>
     
     <nav id="desktopmenu" class="hidden justify-start lg:block">
-       <ul class="flex flex-row  gap-4 space-x-10 text-[17px] md:mt-5 ">
-          <li class=""><a href="#link1">Vores arbejde ▾</a></li>
-          <li class=""><a href="#link2">Hvad kan du gøre? ▾</a></li>
-          <li class=""><a href="#link3">Shop ▾</a></li>
-          <li class="border-2 border-black rounded-full p-3"><a href="#link4">Bliv medlem</a></li>
-       </ul>
+       <ul class="flex flex-row gap-12 space-x-4 text-[17px] text-white md:mt-5 font-bold">
+          <li class="font-anek "><a href="#link1">Vores arbejde <span class="text-orange">▾</span></a></li>
+          <li class="font-anek "><a href="#link2">Hvad kan du gøre? <span class="text-orange">▾</span></a></li>
+          <li class="font-anek "><a href="#link3">Shop</a></li>
+          <li class="font-anek "><a href="#link3">Bliv Medlem</a></li>
+       </ul> 
     </nav>
     
     <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">
@@ -23,7 +22,7 @@
     </div>
     <nav id="mobilmenu" class="flex flex-col content-center bg-orange mt-14 text-white" 
     x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-        <ul class="font-bold border-4">
+        <ul class="font-bold border-4 font-anek ">
             <li class="text-center py-2 border-b-2"><a href="#link1">Vores arbejde</a></li>
             <li class="text-center py-2 border-b-2"><a href="#link2">Hvad kan du gøre?</a></li>
             <li class="text-center py-2 border-b-2"><a href="#link3">Shop</a></li>
@@ -32,5 +31,3 @@
     </nav>
     
     </div>
-    
-    

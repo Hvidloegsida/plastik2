@@ -1,30 +1,38 @@
 <div
   class="text-white space-y-2 flex flex-col justify-center items-center mt-10 md:mb-96"
 >
-  <img src="skraldebil2.svg" alt="" class="max-w-xs mb-10 animation" />
-  <p class="mx-5 md:mx-96">
-    Hvert år ender mere end 8 millioner tons plastik i verdenshavene, hvilket
-    svarer til at dumpe en skraldebil fyldt med plastik hvert minut. Op til 80
-    procent af alt affald i vores have består af plastik.
+  <img src="skraldebil1.svg" alt="" class="max-w-xs mb-10" />
+
+  <!--  den skraldebil der tømmes 
+<img src="skraldebil2.svg" alt="" /> 
+-->
+
+  <p class="mx-5 font-anek">
+    <img src="skraldebil2.svg" alt="" class="max-w-xs mb-10 animation" />
+    <p class="mx-5 md:mx-96">
+      Hvert år ender mere end 8 millioner tons plastik i verdenshavene, hvilket
+      svarer til at dumpe en skraldebil fyldt med plastik hvert minut. Op til 80
+      procent af alt affald i vores have består af plastik.
+    </p>
   </p>
+
+  <style>
+    @keyframes slideInOut {
+      0% {
+        transform: translateX(-200%);
+      }
+
+      50% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(250%);
+      }
+    }
+
+    .animation {
+      animation: slideInOut 20s linear infinite;
+    }
+  </style>
 </div>
-
-<style>
-  @keyframes slideInOut {
-    0% {
-      transform: translateX(-200%);
-    }
-
-    50% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(250%);
-    }
-  }
-
-  .animation {
-    animation: slideInOut 20s linear infinite;
-  }
-</style>
